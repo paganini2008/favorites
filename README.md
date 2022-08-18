@@ -1,6 +1,6 @@
 # favorites
 
-A small and exquisite Bookmark management application that collects your favorite webpage and provides search the content you want by keyword
+A small and exquisite bookmark management application. You can export your favorite web pages from bookmark management of any browser and put it in a directory monitored by the application. The file watchdog will load the file and output all links to <code>Mysql</code> database, finally creating indexes by <code>Elasticsearch</code>.
 
 
 
