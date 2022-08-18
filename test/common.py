@@ -4,10 +4,11 @@ import os
 import sys
 
 from bs4 import BeautifulSoup
+import chardet
 from dbutils.pooled_db import PooledDB
 import pymysql
 import requests
-import chardet
+
 
 cf = configparser.ConfigParser()
 home_path = os.path.abspath('.')
@@ -43,6 +44,8 @@ class HttpUtil:
             return
         soup = BeautifulSoup(html, "lxml")
         body = soup.find('body');
+        if body is None:
+            return None
         return body.text
 
 
