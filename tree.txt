@@ -1,0 +1,15 @@
+favorites
+├── README.md
+├── test
+│   ├── common.py
+│   ├── config
+│   │   └── fav.ini
+│   ├── es.py
+│   ├── fav_exp.py
+│   ├── templates
+│   │   ├── hello.html
+│   │   ├── layout.html
+│   │   ├── result.html
+│   │   └── search.html
+│   └── web.py
+└── tree.txt
