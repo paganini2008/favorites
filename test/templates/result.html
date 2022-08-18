@@ -1,0 +1,18 @@
+{%  extends  "layout.html"  %}
+{%  block  body  %}
+<div>
+	<div>
+		<form action="/search" method="post">
+			<input type="text" id="keyword" name="keyword"/>
+			<input type="submit" id="search-btn" value="搜索"/>
+		</form>
+	</div>
+	{% for data in dataList %}
+		<div>
+			<div class="fav-title"><a href="{{ data.url }}" target="_blank">{{ data.title }}</a></div>
+			<div class="fav-content">{{ data.content | safe}}</div>
+			<div class="fav-created">{{ data.created }}</div>
+		</div>	
+	{% endfor %}
+</div>
+{%  endblock  %}
